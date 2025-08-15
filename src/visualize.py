@@ -2,6 +2,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
+# converts image to bgr format
 def _to_bgr8(img):
     if img.ndim == 2:
         img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
@@ -13,6 +14,7 @@ def _to_bgr8(img):
             img = np.clip(img, 0, 255).astype(np.uint8)
     return img
 
+# displays viz of feature correspondences between two images
 def show_correspondences(imgA, imgB, x1, y1, x2, y2, matches, good_matches=None, filename=None, topk=100, ring_radius=8, ring_thick=2, center_dot=2, line_thick=2):
     a = _to_bgr8(imgA)
     b = _to_bgr8(imgB)
