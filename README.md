@@ -1,4 +1,4 @@
-# Feature Matching (Harris + SIFT-like) — Minimal OpenCV Version
+# Feature Matching (Harris + SIFT-like)
 
 Implements a simple local feature-matching pipeline for comparing two images:
 
@@ -8,7 +8,6 @@ Implements a simple local feature-matching pipeline for comparing two images:
 - **Evaluation:** Accuracy measurement against ground-truth correspondence masks
 - **Visualization:** Side-by-side color image panel with hollow black circles for detected keypoints and green/red lines for correct/incorrect matches
 
----
 
 ## Technologies
 
@@ -17,7 +16,6 @@ Implements a simple local feature-matching pipeline for comparing two images:
 - **NumPy** (matrix and array operations)
 - **Matplotlib** (visualizations)
 
----
 
 ## Visualization
 
