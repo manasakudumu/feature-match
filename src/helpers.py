@@ -2,6 +2,7 @@ from pathlib import Path
 import numpy as np
 from scipy.io import loadmat
 
+# compares predicted feature matches to ground truth and returns correct matches
 def evaluate_correspondence_mask(x1, y1, x2, y2, mat_dir: Path, factor: float = 1.0):
     x1 = x1 / factor
     y1 = y1 / factor
